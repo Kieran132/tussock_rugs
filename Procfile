@@ -1,1 +1,1 @@
-web: gunicorn tussock_rugs/tussock_rugs.wsgi
+web: gunicorn tussock_rugs.wsgi
