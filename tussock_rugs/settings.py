@@ -43,10 +43,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'gunicorn',
     'home',
     'about',
     'contact',
+    'shop',
 
     'crispy_forms',
 ]
@@ -59,7 +63,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "allauth.account.middleware.AccountMiddleware",
 ]
+
+CSRF_TRUSTED_ORIGINS = ['https://tussock-rugs-aebb3eac3e65.herokuapp.com', 'https://8000-kieran132-tussockrugs-l0fd4zt5mk6.ws-eu107.gitpod.io']
+CSRF_COOKIE_SECURE = True
 
 ROOT_URLCONF = 'tussock_rugs.urls'
 
