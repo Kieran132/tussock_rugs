@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    padding-bottom: 60px;
+    color: black;
+    background: white;
+}
+
+h1, h2, hr {
+    font-family: Oswald, sans-serif;
+    color:black;
+}
+
+.stnd-btn {
+    background-color: #AD6E6E;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.stnd-btn:hover{
+    background-color: rgb(157, 180, 247);
+}
+
+/* Allauth Form Styling */
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem; /* mt-4 */
+    color: #07b3a3; /* text-secondary */
+}
+
+.allauth-form-inner-content input {
+    border: 2px solid #07b3a3;
+    margin-bottom: 10px;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #FFC107;
+    border: 1px solid #FFC107;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: white;
+    background-color: #FFC107;
+    border-color: #FFC107;
+}
+
+.allauth-form-inner-content button:hover{
+    background-color: #c1541f;
+}
+
+.login-home-btn{
+    margin-right: 10px;
+}
+
+/* Header styling */
+
+.jumbotron {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    justify-content: space-between;
+    font-size: 16px;
+    margin-left: 2rem;
+    display: flex;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #AD4E1F;
+}
+
+.home-nav {
+    background-color: #F9B4B4;
+    border-bottom: #AD4E1F solid 3px;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+
+
+.home-search{
+    margin-left: 20px;
+}
+
+.search-btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: black;
+    background-color: #AD6E6E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover{
+    background-color: #9DB4F7;
+}
+
+.search-bar{
+    width: 200%;
+}
+
+.shop-icon {
+    font-size: 16px;
+    color: black;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.banner{
+    background-color: #FFC107;
+}
+
+.banner p{
+    margin-top: 10px;
+}
+
+
+/* Footer Styling */
+
+.footer-container {
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social {
+    padding-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    letter-spacing: 60px;
+    font-size: 20px;
+}
+
+.footer-social li a {
+    color: #AD4E1F;
+    ;
+}
+
+.home-footer {
+    margin-top: 10px;
+    background-color: #F9B4B4;
+    border-top: #AD4E1F solid 3px;
+}
+
+.copyright {
+    padding-top: 10px;
+    color: #AD4E1F;
+    padding-left: 30px;
+}
+
+/* Styling for screen sizes from 280px */
+
+@media only screen and (min-width: 280px) and (max-width: 379px){
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .custom-image{
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+    }
+
+    .image-gallery img{
+        width: 137px;
+        height: 137px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 8px;
+        justify-content: space-evenly;
+    }
+
+    .footer-social{
+        font-size: 13px;
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        letter-spacing: 30px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking Styling */
+
+    .container-booking{
+        width: 16rem;
+        padding-left: 29px;
+    }
+
+    .form-group-booking{
+        width: 10rem;
+    }
+}
+
+/* Styling for screen sizes from 380px */
+@media only screen and (min-width: 380px) and (max-width: 419px) {
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .custom-image{
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .image-gallery img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .footer-social {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        letter-spacing: 40px;
+        font-size: 13px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
+}
+
+/* Screen sizes from 420px */
+
+@media only screen and (min-width: 420px) and (max-width: 540px){
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .custom-image{
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image-gallery img{
+        width: 170px;
+        height: 170px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+    
+    .container-booking{
+        margin-bottom: 40px;
+    }
+}
+
+/* Screen sizes from 541px */
+
+@media only screen and (min-width:541px) and (max-width:819px){
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .custom-image{
+        width: 200px;
+        height: 200px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image-container-btm{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .image-gallery img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    /* Taproom page styling */
+
+    .delivery-link{
+        padding-bottom: 20px;
+    }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
+
+}
+
+/* Screen sizes from to 820px */
+
+@media only screen and (min-width: 820px) and (max-width: 991px) {
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+
+    .custom-image{
+        width: 150px;
+        height: 150px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image-container-btm{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .image-gallery img{
+        width: 200px;
+        height: 200px;
+        padding-bottom: 10px;
+    }
+
+    .copyright{
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .footer-social {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 13px;
+    }
+
+    /* Booking page styling */
+
+    .container-booking{
+        margin-bottom: 40px;
+    }
+}
+
+/* Screen sizes from 992px to 1200px */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+
+    /* Index.html styling */
+
+    .image-container{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 10px;
+    }
+
+    .custom-image{
+        width: 200px;
+        height: 200px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .image-container-btm{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .image-gallery img{
+        width: 200px;
+        height: 200px;
+        padding-bottom: 10px;
+    }
+
+}
