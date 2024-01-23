@@ -62,13 +62,13 @@
                                 Shop
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Rugs</a>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=Rugs">Rugs</a>
                                 </li>
-                                <li><a class="dropdown-item" href="#">Tapestries</a></li>
+                                <li><a class="dropdown-item" href="{% url 'products' %}?category=Tapestries">Tapestries</a></li>
                                 <li><a class="dropdown-item"
-                                        href="#">Wall Art</a></li>
+                                        href="{% url 'products' %}?category=Wall_Art">Wall Art</a></li>
                                 <li><a class="dropdown-item"
-                                        href="#">All
+                                        href="{% url 'products' %}?category=Rugs,Tapestries,Wall_Art">All
                                         Products</a></li>
                             </ul>
                         </li>
